@@ -20,6 +20,7 @@ module.exports = (sequelize, Datatypes) => {
     },
     { timestape: true, paranoid: true }
   );
+
   User.associate = (model) => {
     User.hasMany(model.Todo, {
       foreignKey: {
